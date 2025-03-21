@@ -1,5 +1,5 @@
 ---
-# Leave the homepage title empty to use the site title
+# Оставьте заголовок пустым, чтобы использовать заголовок сайта
 title:
 date: 2022-10-24
 type: landing
@@ -8,20 +8,22 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        Математическое моделирование
+        теплопроводности и горения
       image:
         filename: welcome.jpg
       text: |
         <br>
-        
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        Этот проект посвящён математическому моделированию процессов теплопроводности и детерминированного горения. 
+        Используя дифференциальные уравнения и численные методы, мы анализируем различные режимы горения 
+        и реализуем вычислительные эксперименты в OpenModelica и Julia.
   
   - block: collection
     content:
-      title: Latest News
+      title: Последние новости
       subtitle:
-      text:
+      text: |
+        Следите за последними обновлениями нашего исследования, моделирования и результатов по теплопроводности и горению.
       count: 5
       filters:
         author: ''
@@ -40,7 +42,8 @@ sections:
     content:
       title:
       subtitle: ''
-      text:
+      text: |
+        Наше исследование направлено на изучение фундаментальных аспектов теплопередачи и горения, а также применение численных методов для моделирования различных режимов.
     design:
       columns: '1'
       background:
@@ -58,8 +61,8 @@ sections:
 
   - block: collection
     content:
-      title: Latest Preprints
-      text: ""
+      title: Последние публикации
+      text: "Ознакомьтесь с нашими последними научными работами и отчётами по моделированию теплопроводности и горения."
       count: 5
       filters:
         folders:
@@ -74,7 +77,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        {{% cta cta_link="./people/" cta_text="Познакомьтесь с нашей командой →" %}}
     design:
       columns: '1'
 ---
