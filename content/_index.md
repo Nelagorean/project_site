@@ -1,7 +1,7 @@
 ---
 # Оставьте заголовок пустым, чтобы использовать заголовок сайта
-title:
-date: 2022-10-24
+title: Project Research Group
+date: 2025-03-21
 type: landing
 
 sections:

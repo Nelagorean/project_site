@@ -1,28 +1,29 @@
 ---
 # Display name
-title: Алёна Горяйнова
+title: Ирина Гузева 
 
 # Full Name (for SEO)
-first_name: Алёна
-last_name: Горяйнова
+first_name: Ирина
+last_name: Гузева
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: студентка НФИбд-01-22
 
 # Organizations/Affiliations
 organizations:
-  - name: Российский Университет Дружбы Народов 
+  - name: Российский университет дружбы народов 
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
+
 Образование:
   Университет:
     - РУДН, Фундаментальная информатика и информационные технологии 
-    
+
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -30,10 +31,10 @@ bio:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '1132226435@pfur.ru'
+    link: '1132226441@pfur.ru'
   - icon: github
     icon_pack: fab
-    link: https://github.com/Nelagorean
+    link: https://github.com/inguzeva
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to static/files/cv.pdf and uncomment the lines below.
 # - icon: cv

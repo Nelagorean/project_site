@@ -1,68 +1,108 @@
 ---
-title: "An example preprint / working paper"
+title: "Математическое моделирование теплопроводности и горения: Этап 1 — Теоретическая модель"
 authors:
 - admin
-date: "2019-04-07T00:00:00Z"
+- Irina
+- Milena
+- Evgenia
+- Maria
+date: "2025-03-22T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2025-03-14T00:00:00Z"
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
+# Тип публикации
 publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Теоретическое описание модели теплопроводности и детерминированного горения"
+publication_short: "Модель горения"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: |
+  В данном этапе проекта рассматривается математическая модель теплопроводности с экзотермической химической реакцией. 
+  Представлено теоретическое описание процесса горения с учётом теплопередачи и закона Аррениуса. 
+  Разработаны основные уравнения системы и проведён переход к безразмерным переменным.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# Краткое описание (аннотация)
+summary: "Формулировка математической модели теплопроводности и детерминированного горения. Определены основные уравнения и параметры системы."
 
 tags:
-- Source Themes
+- Теплопроводность
+- Горение
+- Математическое моделирование
+- Дифференциальные уравнения
+- Закон Аррениуса
+
 featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+- name: GitHub репозиторий
+  url: https://github.com/Nelagorean/project_site
+
+# Удаляем неактуальные ссылки
+url_pdf: ""
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named featured.jpg/png to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: 'Схема распространения волны горения'
   focal_point: ""
   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
+#   E.g. internal-project references content/project/internal-project/index.md.
+#   Otherwise, set projects: [].
 projects:
-- internal-project
+- project_heat_conduction
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: example
+#   E.g. slides: "example" references content/slides/example/index.md.
+#   Otherwise, set slides: "".
+slides: ""
 ---
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
+## Введение
+Горение — сложный физико-химический процесс, включающий теплопроводность и экзотермическую реакцию. Для его описания используется система дифференциальных уравнений, учитывающая закон Аррениуса.
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+## Математическая модель
+
+### Основные уравнения
+#### Уравнение теплопроводности с учётом энерговыделения:
+$$
+\rho c \frac{\partial T}{\partial t} = \kappa \frac{\partial^2 T}{\partial x^2} - \rho Q \frac{\partial N}{\partial t}
+$$
+
+#### Уравнение химической реакции (закон Аррениуса):
+$$
+\frac{\partial N}{\partial t} = - \frac{N}{\tau} e^{-E/RT}
+$$
+
+### Безразмерные переменные
+- Температура: $\tilde{T} = \frac{cT}{Q}$
+- Энергия активации: $\tilde{E} = \frac{cE}{RQ}$
+- Новая система уравнений:
+$$
+\frac{\partial T}{\partial t} = \chi \frac{\partial^2 T}{\partial x^2} - \frac{\partial N}{\partial t}
+$$
+$$
+\frac{\partial N}{\partial t} = - \frac{N}{\tau} e^{-E/T}
+$$
+
+## Заключение
+Первый этап проекта включает формулировку математической модели горения и теплопроводности. Полученные уравнения будут использоваться в дальнейшем для численного моделирования различных режимов горения. 
+
+{{% callout note %}}
+Следующий этап проекта будет посвящён разработке алгоритмов численного решения модели.
+{{% /callout %}}
